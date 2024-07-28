@@ -1,0 +1,47 @@
+body{
+    max-width: 1440px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background-color: hsl(0, 0%, 98%);
+}
+.header-container{
+    text-align: center;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1{
+    border-top: 5px solid hsl(180, 62%, 55%) ;
+    margin-right: 20px ;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    height: 210px;
+}
+
+
+.c1 img{
+    width: 60px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+
+}
