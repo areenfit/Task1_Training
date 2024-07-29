@@ -1,47 +1,102 @@
 body{
-    max-width: 1440px;
-    font-family: 'Poppins', sans-serif;
-    justify-content: center;
-    align-items: center;
-    
-}
+    font-family: 'Poppins';
+    font-size: 15px;
+    }
 
 .page{
+    background-color: hsl(0, 5%, 96%);
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
-    background-color: hsl(0, 0%, 98%);
-}
-.header-container{
-    text-align: center;
+    align-items: center;
 }
 
+.header-container{
+    padding-top: 50px;
+    text-align: center;
+    height: 10vh;
+    line-height: 20px;
+}
+
+.header-container p{
+    max-width: 540px;
+}
 .cards-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 80vh;
 }
 
-.c1{
-    border-top: 5px solid hsl(180, 62%, 55%) ;
-    margin-right: 20px ;
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+    padding: 20px 20px;
     position: relative;
-    height: 210px;
+    width: 20vw;
+    height: 20vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s;
+
 }
 
+.card:hover {
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
+  }
 
-.c1 img{
+.c2{
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+}
+
+.card img{
     width: 60px;
     position: absolute;
     bottom: 25px;
     right: 25px;
-
 }
+
+.card h2{
+    color: hsl(234, 12%, 34%);
+    font-size: 20px;
+}
+.card p {
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+   /* display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; */
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+  }
+
+  @media (max-width: 725px){
+    .cards-container {
+        flex-direction: column;
+        height: 100%;
+      }
+      .card{  
+        width: 60vw;
+        height: 20vh;
+    }
+    .header-container{
+        color: hsl(234, 12%, 34%);
+        font-size: 12px;
+        margin-bottom: 80px;
+    }
+    .header-container p{
+       padding-left: 40px;
+       padding-right: 40px;
+
+    }
+  }
